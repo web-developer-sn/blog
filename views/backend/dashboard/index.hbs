@@ -8,10 +8,13 @@
             <h1>Dashboard</h1>
 
             <ul class="list-group">
-                <li class="list-group-item">Name: {{currentUser.name}}</li>
-                <li class="list-group-item">Email: {{currentUser.email}}</li>
-                <li class="list-group-item">Image: <img src="{{currentUser.image}}" /></li>
-                <li class="list-group-item">Contact Number: {{currentUser.contact}}</li>
+                <li class="list-group-item"><strong>Name:</strong> {{currentUser.name}}</li>
+                <li class="list-group-item"><strong>Email:</strong> {{currentUser.email}}</li>
+                <li class="list-group-item">
+                    <strong>Image:</strong>
+                    <img src="{{currentUser.image}}" class="img-fluid rounded" style="max-width: 120px; height: auto;">
+                </li>
+                <li class="list-group-item"><strong>Contact Number:</strong> {{currentUser.contact}}</li>
             </ul>
         </div>
     </div>

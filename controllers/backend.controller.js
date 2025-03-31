@@ -2,13 +2,11 @@ const blogModel = require("../models/blog.model");
 const userModel = require("../models/user.model");
 const bcrypt = require('bcrypt');
 
-// dashboard
 const index = async(req, res) => {
     let currentUser = req.session.user;
     res.render('backend/dashboard/index', {currentUser})
 }
 
-// blog
 const blogs = async(req, res) => {
     let blogs = await blogModel.find();
     res.render('backend/blog/index', {blogs})
